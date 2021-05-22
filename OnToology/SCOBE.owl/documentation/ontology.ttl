@@ -1,0 +1,727 @@
+@prefix : <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE> .
+
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE> rdf:type owl:Ontology ;
+                                                              owl:imports <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> ;
+                                                              <http://purl.org/dc/elements/1.1/contributor> "Gabriela P. Henning" ,
+                                                                                                            "Horacio P. Leone" ,
+                                                                                                            "Marcela Vegetti" ;
+                                                              <http://purl.org/dc/elements/1.1/creator> "Alicia C. Böhm" ;
+                                                              <http://purl.org/dc/elements/1.1/licence> "CreativeCommons V4.0 https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                              <http://purl.org/dc/elements/1.1/title> "SCOBE" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/licence
+<http://purl.org/dc/elements/1.1/licence> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#determinesTargetGroup
+:determinesTargetGroup rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isDeterminedBy ;
+                       rdf:type owl:FunctionalProperty ;
+                       rdfs:domain :Group_Evaluation_Result ;
+                       rdfs:range :Reference_Group .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBValueScale
+:hasBValueScale rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Benchmarking_Membership_Property ;
+                rdfs:range <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBenchmarkGroup
+:hasBenchmarkGroup rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isBenchmarkGroupOf ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Benchmarking_Project ;
+                   rdfs:range :Benchmarking_Group .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBenchmarkedSCEntity
+:hasBenchmarkedSCEntity rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :isBenchmarkedWith .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasCComponent
+:hasCComponent rdf:type owl:ObjectProperty ;
+               rdfs:domain :Composite_Criterion ;
+               rdfs:range :Group_Evaluation_Criterion .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasCriterionResult
+:hasCriterionResult rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :isCriterionResultOf ;
+                    rdfs:domain :Group_Evaluation_Criterion ;
+                    rdfs:range :Group_Evaluation_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasEvaluationCriterion
+:hasEvaluationCriterion rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ,
+                                 owl:InverseFunctionalProperty ;
+                        rdfs:domain :Benchmarking_Project ;
+                        rdfs:range :Group_Evaluation_Criterion .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasEvaluationResult
+:hasEvaluationResult rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isEvaluationResultOf .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasGECValueScale
+:hasGECValueScale rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Group_Evaluation_Criterion ;
+                  rdfs:range <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasMembershipProperty
+:hasMembershipProperty rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isMembershipPropertyOf ;
+                       rdfs:domain :Benchmarking_Group ;
+                       rdfs:range :Benchmarking_Membership_Property .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasMembershipValue
+:hasMembershipValue rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :isMembershipValueOf ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :Benchmarking_Membership_Property ;
+                    rdfs:range :Membership_Property_Value .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasReferencePractice
+:hasReferencePractice rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isReferencePracticeOfRGroup ;
+                      rdfs:domain :Reference_Group ;
+                      rdfs:range :Reference_Practice .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasReferencesValueSingleResult
+:hasReferencesValueSingleResult rdf:type owl:ObjectProperty ;
+                                owl:inverseOf :isReferenceValue ;
+                                rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasTransformationRule
+:hasTransformationRule rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isTransformationRuleOf ;
+                       rdfs:domain :Atomic_Criterion ;
+                       rdfs:range :Benchmarking_Transformation_Rule .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isBenchmarkGroupOf
+:isBenchmarkGroupOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isBenchmarkedWith
+:isBenchmarkedWith rdf:type owl:ObjectProperty ;
+                   rdfs:range :Benchmarking_Project .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isCriterionResultOf
+:isCriterionResultOf rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isDeterminedBy
+:isDeterminedBy rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isEquivalentProperty
+:isEquivalentProperty rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Benchmarking_Membership_Property ;
+                      rdfs:range <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute> .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isEvaluationResultOf
+:isEvaluationResultOf rdf:type owl:ObjectProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :Group_Evaluation_Result ;
+                      rdfs:range :Benchmarking_Group .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipPropertyOf
+:isMembershipPropertyOf rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipValueOf
+:isMembershipValueOf rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isProducedBy
+:isProducedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :produce ;
+              rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isReferencePracticeOfRGroup
+:isReferencePracticeOfRGroup rdf:type owl:ObjectProperty ,
+                                      owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isReferenceValue
+:isReferenceValue rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Single_Result ;
+                  rdfs:range :Reference_Value .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTargetGroupOf
+:isTargetGroupOf rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ,
+                          owl:InverseFunctionalProperty ;
+                 rdfs:domain :Reference_Group ;
+                 rdfs:range :Benchmarking_Group .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformableInto
+:isTransformableInto rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> ;
+                     rdfs:range :Atomic_Criterion .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformationRuleOf
+:isTransformationRuleOf rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformedWith
+:isTransformedWith rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Transformed_Measure ;
+                   rdfs:range :Benchmarking_Transformation_Rule .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#originalMeasure
+:originalMeasure rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Transformed_Measure ;
+                 rdfs:range <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#produce
+:produce rdf:type owl:ObjectProperty ;
+         rdfs:domain :Benchmarking_Project ;
+         rdfs:range :Benchmark .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#elementValue
+:elementValue rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Membership_Property_Value .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRLowerBound
+:hasRLowerBound rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRUpperBound
+:hasRUpperBound rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Range_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRValue
+:hasRValue rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Single_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#informationQuality
+:informationQuality rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Benchmarking_Group .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#lowerBound
+:lowerBound rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Membership_Property_Value .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#numberOfBGEntities
+:numberOfBGEntities rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Benchmarking_Group ;
+                    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#numberOfRGEntities
+:numberOfRGEntities rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Reference_Group ;
+                    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#upperBound
+:upperBound rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Membership_Property_Value .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Atomic_Criterion
+:Atomic_Criterion rdf:type owl:Class ;
+                  rdfs:subClassOf :Group_Evaluation_Criterion ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasTransformationRule ;
+                                    owl:someValuesFrom :Benchmarking_Transformation_Rule
+                                  ] ;
+                  owl:disjointWith :Composite_Criterion ;
+                  rdfs:comment "Característica de desempeño que no resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmark
+:Benchmark rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Reference_Practice
+                                               :Reference_Value
+                                             )
+                               ] ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :isProducedBy ;
+                             owl:someValuesFrom :Benchmarking_Project
+                           ] ;
+           rdfs:comment "Punto de referencia contra el cual se compara el desempeño o las prácticas de cada una de las entidades de la cadena de suministros involucradas en un proyecto de “benchmarking”" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group
+:Benchmarking_Group rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty :isBenchmarkGroupOf ;
+                                          owl:someValuesFrom :Benchmarking_Project
+                                        ] ;
+                    rdfs:subClassOf owl:Thing ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasEvaluationResult ;
+                                      owl:someValuesFrom :Group_Evaluation_Result
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasMembershipProperty ;
+                                      owl:someValuesFrom :Benchmarking_Membership_Property
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :numberOfBGEntities ;
+                                      owl:someValuesFrom xsd:integer
+                                    ] ;
+                    rdfs:comment "Grupo de entidades que poseen características afines preestablecidas cuyos desempeños se evalúan en un proyecto de “benchmarking” a efectos de establecer -directa o indirectamente- puntos de comparación" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property
+:Benchmarking_Membership_Property rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasBValueScale ;
+                                                    owl:someValuesFrom <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasMembershipValue ;
+                                                    owl:someValuesFrom :Membership_Property_Value
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isEquivalentProperty ;
+                                                    owl:someValuesFrom <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isMembershipPropertyOf ;
+                                                    owl:someValuesFrom :Benchmarking_Group
+                                                  ] ;
+                                  rdfs:comment "Propiedad de los elementos de un grupo de “benchmarking”" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project
+:Benchmarking_Project rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :produce ;
+                                            owl:someValuesFrom :Benchmark
+                                          ] ;
+                      rdfs:subClassOf owl:Thing ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasBenchmarkGroup ;
+                                        owl:someValuesFrom :Benchmarking_Group
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasEvaluationCriterion ;
+                                        owl:someValuesFrom :Group_Evaluation_Criterion
+                                      ] ;
+                      rdfs:comment "Proyecto de investigación del desempeño y/o de la actuación de un grupo de “benchmarking\"- con el fin de mejorar la performance de entidades de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Transformation_Rule
+:Benchmarking_Transformation_Rule rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isTransformationRuleOf ;
+                                                    owl:someValuesFrom :Atomic_Criterion
+                                                  ] ;
+                                  rdfs:comment "Procedimiento para trasladar las medidas de atributos de desempeño a la escala correspondiente a un criterio atómico" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Composite_Criterion
+:Composite_Criterion rdf:type owl:Class ;
+                     rdfs:subClassOf :Group_Evaluation_Criterion ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasCComponent ;
+                                       owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :Group_Evaluation_Criterion
+                                     ] ;
+                     rdfs:comment "Característica de desempeño que resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Best_Value_Result
+:Group_Best_Value_Result rdf:type owl:Class ;
+                         rdfs:subClassOf :Single_Result ;
+                         owl:disjointWith :Group_Mean_Value_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion
+:Group_Evaluation_Criterion rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Class ;
+                                                  owl:unionOf ( :Atomic_Criterion
+                                                                :Composite_Criterion
+                                                              )
+                                                ] ;
+                            rdfs:subClassOf owl:Thing ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasCriterionResult ;
+                                              owl:someValuesFrom :Group_Evaluation_Result
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasGECValueScale ;
+                                              owl:someValuesFrom <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale>
+                                            ] ;
+                            rdfs:comment "Característica de desempeño que se utiliza para la evaluación y análisis de los miembros de un grupo de “benchmarking”" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result
+:Group_Evaluation_Result rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Class ;
+                                               owl:unionOf ( :Range_Result
+                                                             :Single_Result
+                                                           )
+                                             ] ;
+                         rdfs:subClassOf owl:Thing ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :isCriterionResultOf ;
+                                           owl:someValuesFrom :Group_Evaluation_Criterion
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :isEvaluationResultOf ;
+                                           owl:someValuesFrom :Benchmarking_Group
+                                         ] ;
+                         rdfs:comment "Resultado del análisis de un grupo de “benchmarking” con respecto a un criterio de evaluación" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Inferior_Range
+:Group_Inferior_Range rdf:type owl:Class ;
+                      rdfs:subClassOf :Range_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Mean_Value_Result
+:Group_Mean_Value_Result rdf:type owl:Class ;
+                         rdfs:subClassOf :Single_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Standard_Range
+:Group_Standard_Range rdf:type owl:Class ;
+                      rdfs:subClassOf :Range_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Superior_Range
+:Group_Superior_Range rdf:type owl:Class ;
+                      rdfs:subClassOf :Range_Result .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value
+:Membership_Property_Value rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Class ;
+                                             owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :elementValue ;
+                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                         owl:unionOf ( rdfs:Literal
+                                                                                                                       xsd:float
+                                                                                                                     )
+                                                                                                       ]
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :lowerBound ;
+                                                                                    owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                                    owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                                      owl:unionOf ( rdfs:Literal
+                                                                                                                    xsd:float
+                                                                                                                  )
+                                                                                                    ]
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :upperBound ;
+                                                                                    owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                                    owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                                      owl:unionOf ( rdfs:Literal
+                                                                                                                    xsd:float
+                                                                                                                  )
+                                                                                                    ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ]
+                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :lowerBound ;
+                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                         owl:unionOf ( rdfs:Literal
+                                                                                                                       xsd:float
+                                                                                                                     )
+                                                                                                       ]
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :upperBound ;
+                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                         owl:unionOf ( rdfs:Literal
+                                                                                                                       xsd:float
+                                                                                                                     )
+                                                                                                       ]
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :elementValue ;
+                                                                                    owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                                                    owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                                      owl:unionOf ( rdfs:Literal
+                                                                                                                    xsd:float
+                                                                                                                  )
+                                                                                                    ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ]
+                                                         )
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :isMembershipValueOf ;
+                                             owl:someValuesFrom :Benchmarking_Membership_Property
+                                           ] ;
+                           rdfs:comment "Conjunto de valores de una propiedad que pueden poseer los individuos de un grupo de “benchmarking”" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Range_Result
+:Range_Result rdf:type owl:Class ;
+              rdfs:subClassOf :Group_Evaluation_Result ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasRLowerBound ;
+                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                     owl:unionOf ( rdfs:Literal
+                                                                   xsd:float
+                                                                 )
+                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasRUpperBound ;
+                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                     owl:unionOf ( rdfs:Literal
+                                                                   xsd:float
+                                                                 )
+                                                   ]
+                              ] ;
+              owl:disjointWith :Single_Result ;
+              rdfs:comment "Resultado del análisis de un grupo de “benchmarking” que constituye un rango de valores de un criterio de evaluación" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group
+:Reference_Group rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isTargetGroupOf ;
+                                       owl:someValuesFrom :Benchmarking_Group
+                                     ] ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasReferencePractice ;
+                                   owl:someValuesFrom :Reference_Practice
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isDeterminedBy ;
+                                   owl:someValuesFrom :Group_Evaluation_Result
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :numberOfRGEntities ;
+                                   owl:someValuesFrom xsd:integer
+                                 ] ;
+                 rdfs:comment "Subconjunto del grupo de “benchmarking” que se adopta como referencia para identificar buenas prácticas" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Practice
+:Reference_Practice rdf:type owl:Class ;
+                    rdfs:subClassOf :Benchmark ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :isReferencePracticeOfRGroup ;
+                                      owl:someValuesFrom :Reference_Group
+                                    ] ;
+                    owl:disjointWith :Reference_Value ;
+                    rdfs:comment "Procedimiento; técnica; herramienta; metodología o tecnología que ha demostrado producir buenos resultados en un grupo de referencia; que ha sido seleccionada por medio de un proceso sistemático y que es considerada como ejemplar para el logro del criterio adoptado" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Value
+:Reference_Value rdf:type owl:Class ;
+                 rdfs:subClassOf :Benchmark ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasReferencesValueSingleResult ;
+                                   owl:someValuesFrom :Single_Result
+                                 ] ;
+                 rdfs:comment "Nivel de desempeño de un grupo de “benchmarking” que es reconocido como un punto de comparación para las entidades de la cadena de suministros vinculadas a un proyecto de “benchmarking”" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result
+:Single_Result rdf:type owl:Class ;
+               rdfs:subClassOf :Group_Evaluation_Result ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRValue ;
+                                 owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                      owl:unionOf ( rdfs:Literal
+                                                                    xsd:float
+                                                                  )
+                                                    ]
+                               ] ;
+               rdfs:comment "Resultado del análisis de un grupo de “benchmarking” que constituye un valor puntual de un criterio de evaluación" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Transformed_Measure
+:Transformed_Measure rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty :originalMeasure ;
+                                       owl:someValuesFrom <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure>
+                                     ] ;
+                     rdfs:comment "Medida de un atributo de desempeño compatiblizada para que sea comparable con un criterio atómico" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization> rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Benchmark
+                :Benchmarking_Group
+                :Benchmarking_Membership_Property
+                :Benchmarking_Project
+                :Benchmarking_Transformation_Rule
+                :Group_Evaluation_Criterion
+                :Group_Evaluation_Result
+                :Membership_Property_Value
+                :Reference_Group
+                :Transformed_Measure
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Group_Inferior_Range
+                :Group_Standard_Range
+                :Group_Superior_Range
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

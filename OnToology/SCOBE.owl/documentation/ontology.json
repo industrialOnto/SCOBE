@@ -1,0 +1,1189 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasTransformationRule"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Transformation_Rule"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBValueScale"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Inferior_Range"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Standard_Range"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Superior_Range"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasMembershipValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isEquivalentProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipPropertyOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#produce"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmark"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBenchmarkGroup"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasEvaluationCriterion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformationRuleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Atomic_Criterion"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasCComponent"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Atomic_Criterion"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Composite_Criterion"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Practice"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Value"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasCriterionResult"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasGECValueScale"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Range_Result"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isCriterionResultOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isEvaluationResultOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid48"
+    }, {
+      "@id" : "_:genid31"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    }, {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#elementValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#upperBound"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#lowerBound"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid60"
+    }, {
+      "@id" : "_:genid55"
+    }, {
+      "@id" : "_:genid50"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isProducedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#upperBound"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid56"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#lowerBound"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isBenchmarkGroupOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#elementValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid61"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipValueOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRLowerBound"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRUpperBound"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid70"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasEvaluationResult"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTargetGroupOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasReferencePractice"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Practice"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isDeterminedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#numberOfRGEntities"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isReferencePracticeOfRGroup"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasReferencesValueSingleResult"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result"
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid80"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasMembershipProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#originalMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmark"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Transformation_Rule"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Transformed_Measure"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship"
+    }, {
+      "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#numberOfBGEntities"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/licence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Gabriela P. Henning"
+  }, {
+    "@value" : "Horacio P. Leone"
+  }, {
+    "@value" : "Marcela Vegetti"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Alicia C. Böhm"
+  } ],
+  "http://purl.org/dc/elements/1.1/licence" : [ {
+    "@value" : "CreativeCommons V4.0 https://creativecommons.org/licenses/by/4.0/legalcode"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "SCOBE"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Atomic_Criterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Característica de desempeño que no resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Composite_Criterion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Punto de referencia contra el cual se compara el desempeño o las prácticas de cada una de las entidades de la cadena de suministros involucradas en un proyecto de “benchmarking”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Grupo de entidades que poseen características afines preestablecidas cuyos desempeños se evalúan en un proyecto de “benchmarking” a efectos de establecer -directa o indirectamente- puntos de comparación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Propiedad de los elementos de un grupo de “benchmarking”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Proyecto de investigación del desempeño y/o de la actuación de un grupo de “benchmarking\"- con el fin de mejorar la performance de entidades de una cadena de suministros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Transformation_Rule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Procedimiento para trasladar las medidas de atributos de desempeño a la escala correspondiente a un criterio atómico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Composite_Criterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Característica de desempeño que resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Best_Value_Result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Mean_Value_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Característica de desempeño que se utiliza para la evaluación y análisis de los miembros de un grupo de “benchmarking”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Resultado del análisis de un grupo de “benchmarking” con respecto a un criterio de evaluación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Inferior_Range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Range_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Mean_Value_Result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Standard_Range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Range_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Superior_Range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Range_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Conjunto de valores de una propiedad que pueden poseer los individuos de un grupo de “benchmarking”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid64"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Range_Result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Resultado del análisis de un grupo de “benchmarking” que constituye un rango de valores de un criterio de evaluación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  }, {
+    "@id" : "_:genid65"
+  }, {
+    "@id" : "_:genid69"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Subconjunto del grupo de “benchmarking” que se adopta como referencia para identificar buenas prácticas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid74"
+  }, {
+    "@id" : "_:genid75"
+  }, {
+    "@id" : "_:genid76"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid73"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Practice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Procedimiento; técnica; herramienta; metodología o tecnología que ha demostrado producir buenos resultados en un grupo de referencia; que ha sido seleccionada por medio de un proceso sistemático y que es considerada como ejemplar para el logro del criterio adoptado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmark"
+  }, {
+    "@id" : "_:genid77"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Value"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nivel de desempeño de un grupo de “benchmarking” que es reconocido como un punto de comparación para las entidades de la cadena de suministros vinculadas a un proyecto de “benchmarking”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmark"
+  }, {
+    "@id" : "_:genid78"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Resultado del análisis de un grupo de “benchmarking” que constituye un valor puntual de un criterio de evaluación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  }, {
+    "@id" : "_:genid79"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Transformed_Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medida de un atributo de desempeño compatiblizada para que sea comparable con un criterio atómico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#determinesTargetGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isDeterminedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#elementValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBValueScale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBenchmarkGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isBenchmarkGroupOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasBenchmarkedSCEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isBenchmarkedWith"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasCComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Composite_Criterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasCriterionResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isCriterionResultOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasEvaluationCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasEvaluationResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isEvaluationResultOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasGECValueScale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Criterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasMembershipProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipPropertyOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasMembershipValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipValueOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRLowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRUpperBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Range_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasRValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasReferencePractice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Practice"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isReferencePracticeOfRGroup"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasReferencesValueSingleResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isReferenceValue"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#hasTransformationRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Atomic_Criterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Transformation_Rule"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformationRuleOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#informationQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isBenchmarkGroupOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isBenchmarkedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isCriterionResultOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isDeterminedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isEquivalentProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Membership_Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isEvaluationResultOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Group_Evaluation_Result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipPropertyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isMembershipValueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isProducedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#produce"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isReferencePracticeOfRGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isReferenceValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Single_Result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Value"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTargetGroupOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformableInto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Atomic_Criterion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformationRuleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#isTransformedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Transformed_Measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Transformation_Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#lowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#numberOfBGEntities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#numberOfRGEntities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Reference_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#originalMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Transformed_Measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#produce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmarking_Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Benchmark"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#upperBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOBE#Membership_Property_Value"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
